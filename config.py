@@ -1,7 +1,7 @@
-from dotenv import load_dotenv
+import streamlit as st
 import os
 
-load_dotenv()
+# load_dotenv()
 
 MONGODB_URI = st.secrets["mongo_uri"]
 GOOGLE_API_KEY = st.secrets["api_key"]
