@@ -104,6 +104,7 @@ def main():
                         f"{item['quantity']} {item['unit']} de {item['name']} ({format_currency(item['price'])} cada)"
                         for item in st.session_state.current_items
                     ]
+                    formatted_items
                     
                     save_shopping_list(
                         st.session_state.username,
