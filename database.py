@@ -23,13 +23,14 @@ def verify_user(username, password):
         return True
     return False
 
-def save_shopping_list(username, list_name, items, people_count, days):
+def save_shopping_list(username, list_name, items, people_count, days, total_cost):
     shopping_list = {
         "username": username,
         "list_name": list_name,
         "items": items,
         "people_count": people_count,
-        "days": days
+        "days": days,
+        "total_cost": total_cost
     }
     db.shopping_lists.insert_one(shopping_list)
 
